@@ -1,0 +1,30 @@
+import javax.swing.*;  
+
+
+public class LaunchInterface {
+
+	public static void main(String[] args) {
+		
+		GenerateLaunchFrame();
+	}
+	
+	
+	public static void GenerateLaunchFrame() {
+		
+		//build initial UI window for settings
+		JFrame LaunchFrame = new JFrame();
+		
+		LaunchFrame.setSize(400, 400);
+		LaunchFrame.setTitle("OSRS Bot Launch Settings");
+		
+		LaunchFrame.setLayout(null);
+		LaunchFrame.setLocationRelativeTo(null); //center window
+		LaunchFrame.setVisible(true); //must be true 
+		
+		//generate icon and set for launch frame
+		ImageIcon icon = new ImageIcon("assets/icon.png", "An iconic icon, to say the least");
+		LaunchFrame.setIconImage(icon.getImage());
+		
+		
+	}
+}

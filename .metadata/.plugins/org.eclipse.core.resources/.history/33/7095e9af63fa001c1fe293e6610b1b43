@@ -1,0 +1,43 @@
+import javax.swing.*;  
+
+
+public class LaunchInterface {
+
+	public static void main(String[] args) {
+		
+		GenerateLaunchFrame();
+	}
+	
+	
+	public static void GenerateLaunchFrame() {
+		
+		//build initial UI window for settings
+		JFrame LaunchFrame = new JFrame();
+		
+		LaunchFrame.setSize(450, 400);
+		LaunchFrame.setTitle("Bot-ucks Runescape Bot - Launch Settings");
+		
+		LaunchFrame.setLayout(null);
+		LaunchFrame.setLocationRelativeTo(null); //center window
+		LaunchFrame.setResizable(false); //keep as default size
+		
+		LaunchFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		//generate icon and set for launch frame
+		ImageIcon icon = new ImageIcon("assets/icon.png", "An iconic icon, to say the least");
+		LaunchFrame.setIconImage(icon.getImage());
+		
+		
+		JLabel header = new JLabel("Please select your settings below and then click 'Launch' to launch the but-ocks OSRS bot.");
+		
+		
+		
+		//add all of the components to the frame
+		LaunchFrame.add(header);
+		header.setLocation(110, 120);
+		
+		
+		LaunchFrame.setVisible(true); //must be true 
+
+	}
+}

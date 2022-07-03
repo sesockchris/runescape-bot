@@ -1,0 +1,21 @@
+import javax.swing.*;  
+
+
+public class LaunchInterface {
+
+	public static void main(String[] args) {
+		
+		//build initial UI window for settings
+		JFrame LaunchFrame = new JFrame();
+		
+		LaunchFrame.setSize(400, 400);
+		LaunchFrame.setTitle("OSRS Bot Launch Settings");
+		
+		LaunchFrame.setLayout(null);
+		LaunchFrame.setLocationRelativeTo(null); //center window
+		LaunchFrame.setVisible(true); //must be true 
+		
+		
+		
+	}
+}
